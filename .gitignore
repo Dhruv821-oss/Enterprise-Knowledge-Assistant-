@@ -1,0 +1,33 @@
+```gitignore
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual Environment
+venv/
+.venv/
+
+# Environment Variables
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Generated Data
+vector_store/
+evaluation_results.csv
+
+# Local Databases
+*.sqlite3
+*.db
+
+# Build Files
+build/
+dist/
+*.egg-info/
+```

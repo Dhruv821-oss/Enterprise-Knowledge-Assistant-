@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Enterprise Knowledge Assistant</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            🤖
+
+            <span>Enterprise AI</span>
+
+        </div>
+
+       <button class="upload-btn" id="uploadBtn">
+    📄 Upload PDF
+</button>
+
+<input
+    type="file"
+    id="pdfInput"
+    accept=".pdf"
+    hidden
+>
+        <div class="documents">
+
+            <h3>Documents</h3>
+
+            <ul>
+
+                <li>📄 HR Policy.pdf</li>
+
+                <li>📄 Employee Handbook.pdf</li>
+
+                <li>📄 Technical Guide.pdf</li>
+
+                <li>📄 Customer FAQ.pdf</li>
+
+            </ul>
+
+        </div>
+
+    </aside>
+
+    <!-- Main -->
+
+    <main class="main">
+
+        <!-- Header -->
+
+        <header class="header">
+
+            <div>
+
+                <h2>Enterprise Knowledge Assistant</h2>
+
+                <p>Ask questions about your documents.</p>
+
+            </div>
+
+            <div class="header-buttons">
+
+    <button id="themeBtn">
+        🌙 Dark
+    </button>
+
+    <button id="clearChatBtn">
+        🗑 Clear Chat
+    </button>
+
+</div>
+        </header>
+
+        <!-- Chat -->
+
+      <section id="chat-window">
+
+    <div class="welcome" id="welcome">
+
+        <h1>👋 Welcome</h1>
+
+        <p>
+            Upload your documents and start chatting with your AI assistant.
+        </p>
+
+    </div>
+
+</section>
+
+        <!-- Input -->
+
+        <footer class="input-area">
+
+            <input
+
+                id="question"
+
+                type="text"
+
+                placeholder="Ask anything..."
+
+            >
+
+            <button id="send">
+
+                ➤
+
+            </button>
+
+        </footer>
+
+    </main>
+
+</div>
+
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+
+</body>
+</html>
